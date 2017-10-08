@@ -101,7 +101,7 @@ The data has some missing values represented as "NA"
   xyplot ( bydateframe$mean.steps ~ bydateframe$interval , type = "l", xlab = "5 Min Time Interval", ylab = "Mean Steps Per Day", main = "Mean Steps Per Day per 5 Minite Time Interval")
 ```
 
-![](Repro_Research_Assignment_files/figure-html/Time Series-1.png)<!-- -->
+![](Repro_Research_Assignment_files/figure-html/Time_Series-1.png)<!-- -->
 
 ```r
   maxsteps <- bydateframe[which(bydateframe$mean.steps == max(bydateframe$mean.steps)),]  ##just in case there are ties
@@ -172,7 +172,7 @@ Replace missing steps values with the mean from that interval averaged across da
   hist(grouped2$steps, main = "Histogram of Steps Taken Per Day", xlab = "Number of Steps", col="Blue")
 ```
 
-![](Repro_Research_Assignment_files/figure-html/Missing Data-1.png)<!-- -->
+![](Repro_Research_Assignment_files/figure-html/Missing_Data-1.png)<!-- -->
 
 ```r
   print (paste("The mean number of steps per day = ", format(round(mean(grouped2$steps),2),nsmall=2)))
@@ -221,6 +221,6 @@ Replace missing steps values with the mean from that interval averaged across da
   xyplot ( bydateframe$mean.steps ~ bydateframe$interval | bydateframe$day, type = "l", xlab = "5 Min Time Interval",     ylab = "Mean steps Per Day", main = "Mean Steps Per Day per 5 Minite Time Interval", layout=c(1,2))
 ```
 
-![](Repro_Research_Assignment_files/figure-html/Weekend vs Weekday-1.png)<!-- -->
+![](Repro_Research_Assignment_files/figure-html/Weekend_vs_Weekday-1.png)<!-- -->
 
 

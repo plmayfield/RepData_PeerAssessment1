@@ -66,7 +66,7 @@ The data has some missing values represented as "NA"
 ```
 
 ###Create a Time Series Plot by date for each time series increment
-```{r Time Series}
+```{r Time_Series}
   library("lattice")
 
   userdata <- ReadData()
@@ -89,7 +89,7 @@ The data has some missing values represented as "NA"
 ###Missing Data Analysis 
 Replace missing steps values with the mean from that interval averaged across days
 
-```{r Missing Data}
+```{r Missing_Data}
  userdata <- ReadData()
  print (paste ("The number of NAs in this data set = ", sum(is.na(userdata$steps)) ))
  
@@ -126,7 +126,7 @@ Replace missing steps values with the mean from that interval averaged across da
 
 
 ###Weekend vs Weekday Analysis
-```{r Weekend vs Weekday}
+```{r Weekend_vs_Weekday}
   userdata <- ReadData()
 
   ##Add column with day of week
